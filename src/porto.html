@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/font/css/all.min.css">
+</head>
+<body>
+    <nav class="container mx-auto ">
+        <div class="flex sticky items-center justify-between bg-gray-700 shadow-lg mx-auto py-2 px-4">
+            <div class="">
+                <span class="fa-solid fa-circle text-red-500 text-xs"></span>
+                <span class="fa-solid fa-circle text-yellow-500 text-xs"></span>
+                <span class="fa-solid fa-circle text-green-500 text-xs"></span>
+            </div>
+        </div>
+        
+
+        <i class="fa-solid top-12 right-3 fixed md:hidden fa-bars bg-gray-500 text-white p-3 rounded-full cursor-pointer" onclick="aktif()"></i>
+        <ul class="fixed p-2 shadow-2xl w-32 transition-all top-28 right-2 hidden bg-white z-50 " id="menu">
+            <li class=" hover:bg-gray-100  transition ">
+                <a href="#about" class="py-4 px-3 flex items-center gap-5 ">
+                    <i class="text-gray-600 fa-solid fa-home-user"></i>
+                    <label class="text-gray-600">About</label>
+                </a>
+            </li>
+            <li class=" hover:bg-gray-100 transition">
+                <a href="#skill" class="py-4 px-3 flex items-center gap-5 ">
+                    <i class="fa-solid text-gray-600 fa-wand-magic-sparkles"></i>
+                    <label class="text-gray-600">Skill</label>
+                </a>
+            </li>
+            <li class=" hover:bg-gray-100 transition">
+                <a href="#Projects" class="py-4  px-3 flex items-center gap-5 ">
+                    <i class="fa-solid fa-layer-group text-gray-600"></i>
+                    <label class="text-gray-600">Projects</label>
+                </a>
+            </li>
+            <li class=" hover:bg-gray-100 transition">
+                <a href="#Contact" class="py-4 px-3 flex items-center gap-5 ">
+                    <i class="fa-solid fa-contact-book text-gray-600"></i>
+                    <label class="text-gray-600">Contact</label>
+                </a>
+            </li>
+            <li id="darkMode" class="py-4 cursor-pointer hover:bg-gray-100 px-3 flex  items-center gap-5">
+                <i id="dark" class="text-xl fa-solid fa-sun"></i>
+                <label for="dark">Mode</label>
+            </li>
+    
+        </ul>
+    </nav>
+
+    <section class="container mx-auto  text-center -z-30 p-3  mt-6 ">
+        <div class="h-52 blur-3xl dark:hidden -z-10 mx-auto right-1 top-52  w-52 bg-orange-200 absolute rounded-full"></div>
+        <h1 class="text-3xl font-bold dark:text-white font-[poppins] text-gray-600">Anang Kurniawan</h1>
+        <h5 class="font-bold text-gray-500 dark:text-white">WEB DEVELOPER & DESIGNER</h5>
+        <button class="my-3 py-1 px-2 mx-auto flex items-center bg-blue-400 rounded-lg text-white   font-medium text-xs font-[poppins]"><h4 class="mr-2">Download CV</h4>
+            <i class="fa-solid fa-download"></i>
+        </button>
+        <div class="h-44 blur-3xl -z-10 mx- -left-10 top-52  w-44 dark:hidden bg-fuchsia-200 absolute rounded-full"></div>
+            <div class="h-[2px] bg-gray-300 w-14 rounded-full mx-auto"></div>
+            <div class="flex gap-5 my-5 justify-center">
+                <a href="">
+                    <i class="dark:text-white text-pink-600 cursor-pointer hover:text-gray-600 text-2xl fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/niawanart">
+                    <i class="dark:text-white text-gray-700 cursor-pointer hover:text-gray-600 text-2xl fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="dark:text-white text-red-500 cursor-pointer hover:text-gray-600 text-2xl fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                    <i class="dark:text-white text-gray-500 cursor-pointer hover:text-gray-600 text-2xl fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+    </section>
+    <section id="about"  class="container p-3  mx-auto">
+        <h1 class="text-center dark:text-white text-gray-600 text-2xl font-bold">About</h1>
+        <p class="my-3 text-center font-[poppins] dark:text-white text-gray-500 text-sm ">Welcome to my portofolio! I'm a skilled web developer and designer with a knack for creating captivating digital experience. My design expertise merger visual appeal with user friedly interfaces, While my development skills bring dynamic and responsive websites to life. I;m committed to delivering hight-quality result that align with client objctives. Explore my portofolio to see my contributions in action!.</p>
+        <div class=" -left-0 absolute blur-2xl opacity-30 -z-50">
+            <span class="dark:hidden h-20 w-20 -mr-20 bg-red-500 rounded-full absolute"></span>
+            <span class="dark:hidden h-20 w-20 left-16  bg-yellow-500 rounded-full absolute"></span>
+            <span class="dark:hidden h-20 w-20 bg-green-500 left-10 mt-16  rounded-full absolute"></span>
+        </div>
+    </section>
+
+    <script src="/src/app.js"></script>
+</body>
+</html>
